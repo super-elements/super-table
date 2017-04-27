@@ -47,13 +47,7 @@
 
         let i = 0;
         this.items.forEach(dataObject => {
-          let row = '';
-
-          if(this.items.indexOf(dataObject) == 0){
-            row = document.createElement('th');
-          } else {
-            row = document.createElement('tr');
-          }
+          let row = document.createElement('tr');
           row.id = `r${i}`;
           table.appendChild(row);
           i++;
@@ -63,6 +57,10 @@
           Object.keys(dataObject).forEach(dataEntry => {
 
             let column = document.createElement('td');
+            if(this.items.indexOf(dataObject) == 0){
+              column = document.createElement('th');
+            }
+
             column.id = `r${i}c${j}`;
             j++;
             column.innerText = dataObject[dataEntry];
