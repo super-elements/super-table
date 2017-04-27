@@ -42,8 +42,8 @@
       populateData() {
         let table = document.createElement('table');
         table.id = 'contentTable';
-        this.querySelector('#table').innerHTML = '';
-        this.querySelector('#table').appendChild(table);
+        this.root.querySelector('#table').innerHTML = '';
+        this.root.querySelector('#table').appendChild(table);
 
         let i = 0;
         this.items.forEach(dataObject => {
