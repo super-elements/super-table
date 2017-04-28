@@ -18,11 +18,15 @@
   <body>
     <div class="vertical-section-container centered">
       <h3>Basic super-table demo</h3>
-      <demo-snippet>
-        <template>
-          <super-table></super-table>
-        </template>
-      </demo-snippet>
+
+          <super-table id="table1"></super-table>
+          <script>
+            document.getElementById('table1').items = [
+              {'Name': 'Vivek', 'Age': 10, 'Female': false},
+              {'Name': 'Junoon', 'Age': 8, 'Female': true},
+              {'Name': 'Dipti', 'Age': 40, 'Female': true},
+            ]
+          </script>
     </div>
   </body>
 </html>
