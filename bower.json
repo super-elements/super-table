@@ -1,6 +1,8 @@
 {
   "name": "super-table",
+  "version": "1.0.0",
   "main": "super-table.html",
+  "license": "Apache-2.0",
   "dependencies": {
     "polymer": "Polymer/polymer#^1.4.0"
   },
